@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgRegister {
+  position: relative;
+  background-image: url("./assets/gamerRoom.jpg");
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+}
+
+.bgLogin {
+  position: relative;
+  background-image: url("./assets/fondoLogin.jpg");
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+}
+
+.bgPedidos {
+  position: relative;
+  background-image: url("./assets/fondoPedidos.jpg");
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+}
+.bgNuevoPedido {
+  position: relative;
+  background-image: url("./assets/fondoForm.png");
+  aspect-ratio: auto;
+  background-size: cover;
+}
+
+.bgPerfil {
+  position: relative;
+  background-image: url("./assets/fondoProfile.jpg");
+  aspect-ratio: auto;
+  background-size: cover;
+}
+
+.bgContacto {
+  position: relative;
+  background-image: url("./assets/imgCard1.jpg");
+  aspect-ratio: 16/9;
+  background-size: cover;
+}
+
+.bgContactoMobile {
+  position: relative;
+  background-image: url("./assets/fondoContactoMobile.png");
+  aspect-ratio: 9/16;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 800px) {
+  .bgContacto {
+    background-image: url("./assets/fondoContactoMobile.png");
+    aspect-ratio: 9/16;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.bgVision {
+  position: relative;
+  background-image: url("./assets/imgcardvision.jpg");
+  aspect-ratio: auto;
+  background-size: cover;
+}
+
+.bgMision {
+  position: relative;
+  background-image: url("./assets/imgcardvalores.jpg");
+  aspect-ratio: auto;
+  background-size: cover;
+}
+.bgValores {
+  position: relative;
+  background-image: url("./assets/imgcardmision.jpg");
+  aspect-ratio: auto;
+  background-size: cover;
+}
+
+.bgCustom {
+  background: linear-gradient(
+    90deg,
+    #9510eb,
+    /* blue_violet */ #6deafb,
+    /* electric_blue */ #2b1baa,
+    /* zaffre */ #671186,
+    /* purple */ #8c19a2 /* mauveine */
+  );
+}
+
+/* Borde gradiante */
+
+:root {
+  --pale-azure: #91d4f9;
+  --lavender-floral: #a87ee9;
+  --zaffre: #271a9c;
+  --federal-blue: #271864;
+  --blue-violet: #7b3fdb;
+}
+
+/* Aplica el gradiente */
+.bg-custom-gradient {
+  background: linear-gradient(150deg, #ce2adc, #8c62e8, #28bbf7);
+  background-size: 240% 100%; /* Para efectos de animación, opcional */
+  background-position: center;
+}
+
+/* Opcional: Añade una animación de desplazamiento del gradiente */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-custom-gradient-animated {
+  animation: gradientShift 10s ease infinite;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
