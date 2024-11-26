@@ -25,12 +25,12 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             {/* Rutas privadas */}
-            {/* <Route element={<ProtectedRoute />}> */}
-            <Route path="/pedidos" element={<PedidosPage />} />
-            <Route path="/crearPedido" element={<PedidoFormPage />} />
-            <Route path="/pedido/:id" element={<PedidoFormPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            {/* </Route> */}
+            <Route element={<ProtectedRoute />}>
+              <Route path="/pedidos" element={<PedidosPage />} />
+              <Route path="/crearPedido" element={<PedidoFormPage />} />
+              <Route path="/pedido/:id" element={<PedidoFormPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
+            </Route>
           </Routes>
           <FooterConditional />
         </BrowserRouter>
