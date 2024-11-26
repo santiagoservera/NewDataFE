@@ -74,7 +74,6 @@ export const AuthProvider = ({ children }) => {
         if (!res.data) {
           setIsAuthenticated(false);
           setIsLoading(false);
-
           return;
         }
 
@@ -88,7 +87,7 @@ export const AuthProvider = ({ children }) => {
       }
     }
     checkLogin();
-  }, []);
+  }, []); // Dependencias vacías para ejecutarlo solo al cargar el componente
 
   return (
     <AuthContext.Provider
