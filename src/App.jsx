@@ -28,7 +28,7 @@ function App() {
             <Route element={<ProtectedRoute />}>
               <Route path="/pedidos" element={<PedidosPage />} />
               <Route path="/crearPedido" element={<PedidoFormPage />} />
-              <Route path="/pedido/:id" element={<PedidoFormPage />} />
+              {/* <Route path="/pedido/:id" element={<PedidoFormPage />} /> */}
               <Route path="/profile" element={<ProfilePage />} />
             </Route>
           </Routes>
